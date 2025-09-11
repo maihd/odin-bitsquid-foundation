@@ -1,0 +1,75 @@
+package array_slice_multi_pointer
+
+import "core:fmt"
+
+@(export)
+game :: proc() {
+}
+
+main :: proc() {
+	fmt.printf(
+		"Hellope! Let exploring what Odin offer to work with buffer/batch/bulk (or group of items in continous memory array)\n",
+	)
+	fmt.printf("First, the well know concept, array:\n")
+	fmt.printf("Array come with 2 types: static and dynamic size\n")
+	fmt.printf("Static array: `[N]T`, which N is size of array, T is data type of item\n")
+	fmt.printf(
+		"Dynamic array: `[dynamic]T`, which dynamic mean the array is can be grown (size are unfixed, dynamic growing), T is data type of item\n",
+	)
+
+	static_array := [3]f32{1, 2, 3}
+	fmt.printf("Value of `[3]f32{{1, 2, 3}}`: %v\n", static_array)
+
+	dynamic_array := make([dynamic]f32, 3)
+	defer delete(dynamic_array)
+
+	dynamic_array[0] = 4
+	dynamic_array[1] = 5
+	dynamic_array[2] = 6
+	fmt.printf("Value of `[dynamic]f32` = %v\n", dynamic_array)
+
+	fmt.println("")
+	fmt.printf("Good, next goto next concept, slice:\n")
+	fmt.printf("The syntax of slice is simple: `[]T`, which T is data type of item.\n")
+	fmt.printf(
+		"But, the eval in the details, underlying, it's a struct contains length and pointer to data, it's like `Span<T>` from C#, but in language-level.\n",
+	)
+	fmt.printf(
+		"When the slices are a language feature, you have some syntax sugars to make working with slice easier.\n",
+	)
+
+	fmt.printf(
+		"You can easy create a slice from array. The syntax is `array[S:E]`, which S is start index, E is end index (exclusive).\n",
+	)
+
+	fmt.printf("In common case, you want cast array to slice which full size, use [:]\n")
+
+	fmt.printf("Value of `[3]f32` after cast to slice: %v\n", static_array[:])
+	fmt.printf("Value of `[dynamic]f32` after cast to slice: %v\n", dynamic_array[:])
+
+	fmt.printf("Value of slice from range 1:3 of `[3]f32`: %v\n", static_array[1:3])
+
+	fmt.println()
+	fmt.printf(
+		"And the last concept, multi pointer, a pointer to multi items (no size, just address).\n",
+	)
+	fmt.printf("For short, its just C pointer, but cheat as array.\n")
+	fmt.printf("It's used for foreign procedure bindings.\n")
+	fmt.printf(
+		"This is other good features, that help your API cleaner, even the C functions are used in Odin mean safer (no misleading with pointer and array).\n",
+	)
+	fmt.printf(
+		"Because multi pointer is just a pointer, we just need get the pointer from array or slice, with raw_data() procedure.\n",
+	)
+	fmt.printf(
+		"Value of raw_data(static_array[:]): %v. Note: we cannot get ptr from static array\n",
+		raw_data(static_array[:]),
+	)
+	fmt.printf("Value of raw_data(dynamic_array): %v\n", raw_data(dynamic_array))
+
+
+	fmt.println()
+	fmt.printf(
+		"See the code in array_slice_multi_pointer/main.odin (you can double click to open file in some terminals)\n",
+	)
+}
