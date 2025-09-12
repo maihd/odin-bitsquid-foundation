@@ -47,3 +47,4 @@ Let's exploring it by yourself.
 - Array, slice, multi items
 - Map
 - Memory Management
+- Procedural Programming
