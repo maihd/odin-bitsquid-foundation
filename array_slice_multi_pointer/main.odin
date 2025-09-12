@@ -67,6 +67,9 @@ main :: proc() {
 	)
 	fmt.printf("Value of raw_data(dynamic_array): %v\n", raw_data(dynamic_array))
 
+	fmt.println()
+	fmt.printf("Let reverse engineering dynamic array.\n")
+	fmt.printf("Size of [dynamic]int: %v\n", size_of([dynamic]int))
 
 	fmt.println()
 	fmt.printf(
