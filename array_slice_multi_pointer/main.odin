@@ -107,6 +107,19 @@ main :: proc() {
 	)
 
 	fmt.println()
+	fmt.printf("Skip the prediction, jump direct into the doc, the struct of slice look like:")
+	fmt.printf(`
+	struct {{
+		data: 		rawptr, 
+		len: 		int,
+	}}	
+	`)
+	fmt.printf(
+		"Value of transmute(runtime.Raw_Slice)dynamic_array[:]: %v\n",
+		transmute(runtime.Raw_Slice)dynamic_array[:],
+	)
+
+	fmt.println()
 	fmt.printf(
 		"See the code in array_slice_multi_pointer/main.odin (you can double click to open file in some terminals)\n",
 	)
