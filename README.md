@@ -39,3 +39,4 @@ Let's exploring it by yourself.
 
 ## Table of Contents
 - Array, slice, multi items
+- Map
