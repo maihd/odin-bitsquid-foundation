@@ -1,5 +1,6 @@
 package array_slice_multi_pointer
 
+import "base:runtime"
 import "core:fmt"
 
 @(export)
@@ -70,6 +71,40 @@ main :: proc() {
 	fmt.println()
 	fmt.printf("Let reverse engineering dynamic array.\n")
 	fmt.printf("Size of [dynamic]int: %v\n", size_of([dynamic]int))
+	fmt.printf(
+		`Based on the size of [dynamic]int, struct layout maybe: 
+		struct {{ 
+			len, cap: 	int, 
+			data: 		rawptr, 
+			allocator: 	runtime.Allocator, 
+		}}`,
+	)
+	fmt.println()
+
+	Dynamic_Array_Details :: struct {
+		len, cap:  int,
+		data:      rawptr,
+		allocator: runtime.Allocator,
+	}
+	dynamic_array_details := transmute(Dynamic_Array_Details)dynamic_array
+	fmt.printf("Value of dynamic_array_details: %v\n", dynamic_array_details)
+	fmt.printf(
+		"Look like the len are wrong, let check the docs of Odin. Found out we have runtime.Raw_Dynamic_Array.\n",
+	)
+	fmt.printf(
+		"Value of transmute(runtime.Raw_Dynamic_Array)dynamic_array: %v\n",
+		transmute(runtime.Raw_Dynamic_Array)dynamic_array,
+	)
+	fmt.printf("Good looking now! So the struct layout of a dynamic array is:")
+	fmt.printf(
+		`
+	struct {{
+		data: 		rawptr, 
+		len, cap: 	int, 
+		allocator: 	runtime.Allocator, 
+	}}	
+	`,
+	)
 
 	fmt.println()
 	fmt.printf(

@@ -6,6 +6,7 @@ Source code of Bitsquid Foundation: https://github.com/niklas-ourmachinery/bitsq
 I'm exploring the idea of interactive blog. It's mean I will provide the code with well written printing messages.
 You can run the code to show the messages, edit and experiment you idea. Fortunately, Odin provide simple command to run program,
 with the prompt: `odin run <folder>`. Let try it!
+> **NOTE:** The output messages have not been looking good now, but I will apply some techniques into printing pretty message to terminal and TUI. 
 
 
 ## Disclaimer
