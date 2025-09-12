@@ -2,6 +2,11 @@
 If Bitsquid was written in Odin. 
 Source code of Bitsquid Foundation: https://github.com/niklas-ourmachinery/bitsquid-foundation
 
+## Design of this repo
+I'm exploring the idea of interactive blog. It's mean I will provide the code with well written printing messages.
+You can run the code to show the messages, edit and experiment you idea. Fortunately, Odin provide simple command to run program,
+with the prompt: `odin run <folder>`. Let try it!
+
 
 ## Disclaimer
 You looking for source code of the library, really? Odin basically come with the same mindset with Bitsquid Foundation.
