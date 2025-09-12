@@ -114,9 +114,20 @@ main :: proc() {
 		len: 		int,
 	}}	
 	`)
+
+	fmt.println()
 	fmt.printf(
 		"Value of transmute(runtime.Raw_Slice)dynamic_array[:]: %v\n",
 		transmute(runtime.Raw_Slice)dynamic_array[:],
+	)
+
+	// fmt.printf(
+	// 	"If you look closer, Odin prefer but the data member intro front, because this will support transmute ops on slice to multi pointer.\n",
+	// )
+
+	fmt.println()
+	fmt.printf(
+		"Conclusion, the bulk data types work like exactly what Bitsquid Foundation design goals, but with features that make code better.\n",
 	)
 
 	fmt.println()
