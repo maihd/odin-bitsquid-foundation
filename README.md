@@ -14,6 +14,7 @@ You looking for source code of the library, really? Odin basically come with the
 So currently, this repo just for exploring what Odin offer, do I need add more features or not.
 And for learning purposes, we should do some coding. So I organize concepts, data structures and algorithm into sections.
 Let's exploring it by yourself.
+> **PROJECT STATUS**: I have completed the surface of the iceberg, mainly for exploring Odin design goals, features, how to solve problem in Odin. I will upgrade when it's convenience, have more big and important topics to exploring. Have fun, and joy of programming in Odin!
 
 
 ## Bitsquid Foundation's Library Design
