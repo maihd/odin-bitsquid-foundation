@@ -49,3 +49,4 @@ Let's exploring it by yourself.
 - Memory Management
 - Procedural Programming
 - Flags and bit_set
+- Handle and bit_field
