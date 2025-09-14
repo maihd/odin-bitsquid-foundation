@@ -36,10 +36,10 @@ main :: proc() {
 	fmt.printf("Here a simple definition of bit_set:\n")
 	fmt.printf(
 		`
-        Hints :: enum {
+        Hints :: enum {{
             VSync,
             MSSA_2X,
-        }
+        }}
         Hint_Flags :: bit_set[Hints]
     `,
 	)
