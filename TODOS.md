@@ -28,3 +28,4 @@
 - Follow on one of good philosiphy: 
     - Modern computer are fast, so dont pessimize your code, plain and simple are fast enough
     - Struct as based concepts for every data structures (in real life it must more complex than this)
+- Source code in Odin, converted from Bitsquid blogs.
