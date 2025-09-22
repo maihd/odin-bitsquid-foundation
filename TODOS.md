@@ -9,8 +9,14 @@
 
 
 ## More Topics
-- String
 - SJSON
+- Math
+- Error handling:
+    - Error context
+    - Crashing as unignorable error
+    - Return multiple values and or_* operator
+    - Logging supported by context system
+    - Context pass as last argument
 - Code structure:
     - Odin compile time are good
     - Odin prefer POD, avoid completely inheritance by dont had it
@@ -18,22 +24,15 @@
     - Odin follow DoD, data and code are seperated, processing data with procedures
     - No methods, no class, no v-table, no grouping data and code into single object
     - Embrace system-based programming, combine with compression programming to manage codebase
-- Error handling:
-    - Error context
-    - Crashing as unignorable error
-    - Return multiple values and or_* operator
-    - Logging supported by context system
-    - Context pass as last argument
-- Math
-- Follow on one of good philosiphy: 
-    - Modern computer are fast, so dont pessimize your code, plain and simple are fast enough
-    - Struct as based concepts for every data structures (in real life it must more complex than this)
-- Source code in Odin, converted from Bitsquid blogs.
 
 
 ## Advanced topics, outside bitsquid foundation topics (not mentioned or rarely mentioned)
 - Refactoring
 - Later on, we will enter the new world: Our Mechaniery engine, it have good posts when developing game engine in C.
+- Follow on one of good philosiphy: 
+    - Modern computer are fast, so dont pessimize your code, plain and simple are fast enough
+    - Struct as based concepts for every data structures (in real life it must more complex than this)
+- Source code in Odin, converted from Bitsquid blogs.
 
 
 ## Exercises and practices
@@ -46,3 +45,12 @@
 
 ## Learn from blogs
 - Design decisions: https://bitsquid.blogspot.com/2012/12/four-meditations-on-bad-design-decisions.html
+
+
+## Refactory the repos
+- Foundation
+- Imagination
+- Showcases
+- Examples
+- Exercises
+- Problem Solving, Design Decisions, Programming Mindset
