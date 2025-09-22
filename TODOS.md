@@ -44,6 +44,7 @@
 - Practice without exercises or purposes are useless
 - Useless mean that my docs, my words are useless, this repo are nonsenes
 - I will put more codes, more usages, how solve real world problems with Odin and Odin+Bitsquid mindsets
+- C to Odin for learners have C experiences and may be help beginners transpile code from C books
 
 ## Learn from blogs
 - Design decisions: https://bitsquid.blogspot.com/2012/12/four-meditations-on-bad-design-decisions.html
