@@ -29,3 +29,21 @@
     - Modern computer are fast, so dont pessimize your code, plain and simple are fast enough
     - Struct as based concepts for every data structures (in real life it must more complex than this)
 - Source code in Odin, converted from Bitsquid blogs.
+
+
+## Advanced topics, outside bitsquid foundation topics (not mentioned or rarely mentioned)
+- Reflection:
+    - Any game engine (or some big custom engine games) need serialization/deserialization, code generations.
+    - Odin solve this provide simple RTTI and struct tags to do reflections.
+- Refactoring
+- Later on, we will enter the new world: Our Mechaniery engine, it have good posts when developing game engine in C.
+
+
+## Exercises and practices
+- Learning without practicing is insane
+- Practice without exercises or purposes are useless
+- Useless mean that my docs, my words are useless, this repo are nonsenes
+- I will put more codes, more usages, how solve real world problems with Odin and Odin+Bitsquid mindsets
+
+## Learn from blogs
+- Design decisions: https://bitsquid.blogspot.com/2012/12/four-meditations-on-bad-design-decisions.html
