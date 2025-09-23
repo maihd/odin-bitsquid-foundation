@@ -9,7 +9,6 @@
 
 
 ## More Topics
-- SJSON
 - Error handling:
     - Error context
     - Crashing as unignorable error
