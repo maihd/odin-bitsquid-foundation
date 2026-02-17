@@ -1,11 +1,22 @@
 # Todos
 
+## Important
+- Good comments in code, instruction comments for reader
+- TUI to exploring topics in oneshot
+- Show code samples
+- Refactory that can run code from submodules
+
+
 ## Flags and bit_set
 - Add proof when boolean make padding, bad for struct layout
 - Add proof when boolean make configuration are hard, too centered
 - Add proof when boolean make procedural api are harder understand
 - Cases that boolean are good
 - More advantages of flags
+
+
+## Memory
+- Allocator: https://bitsquid.blogspot.com/2010/09/custom-memory-allocation-in-c.html
 
 
 ## More Topics

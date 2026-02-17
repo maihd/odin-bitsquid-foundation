@@ -34,6 +34,7 @@ Let's exploring it by yourself.
 
 
 ## Odin features that embrace Bitsquid Foundation's Library Design
+- Simplicity and minimalistic 
 - Struct can only have public members
 - Struct have no methods
 - No namespace, but package work like open namespace approachs
@@ -42,6 +43,7 @@ Let's exploring it by yourself.
 - Bitsquid Foundation's Algorithms are included in language-level: murmur hash (and others), math, memory, string stream, string builder
 - Memory layout awareness for struct, with syntaxes and builtin procedures: align, align_of, bit_field
 - Working with pointer procedures, and forbidden pointer arithmetic: ptr_sub, ptr_offset
+- Project Physical Architecture are simple and compiling quickly
 
 
 ## Table of Contents
@@ -51,3 +53,9 @@ Let's exploring it by yourself.
 - Procedural Programming
 - Flags and bit_set
 - Handle and bit_field
+
+
+## Resources
+- [Bitsquid Foundation library]: https://github.com/niklas-ourmachinery/bitsquid-foundation
+- [In-depth Bitsquid Foundation]: https://www.gamedeveloper.com/programming/in-depth-bitsquid-foundation-library
+- [Simplified JSON (sjson)]: https://bitsquid.blogspot.com/2009/10/simplified-json-notation.html

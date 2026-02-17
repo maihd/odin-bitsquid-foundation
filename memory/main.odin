@@ -31,7 +31,7 @@ main :: proc() {
     fmt.printf("Comparing with Bitsquid Foundation, they do the same, but implementations and terms may have some slight differences.\n")
     fmt.printf("But when force user to passing around context structs or allocators, its may be make the code verbose, take longer to typing, the look code more dense.\n")
     fmt.printf("Fortunately, Odin have default arguments, and implicit context calling convention.\n")
-    fmt.printf("Please reading the core:strings source code, that a starter point the see how working with small and often memory allocations.\n")
+    fmt.printf("Please reading the core:mem and core:strings source code, that a starter point the see how working with small and often memory allocations.\n")
 
     fmt.println()
     fmt.printf("Okay, that all things need to know about context system, let move other rule: pointer arithmetic is avoid.\n")
