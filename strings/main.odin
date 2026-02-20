@@ -14,18 +14,18 @@ main :: proc() {
 	)
 
 	fmt.println()
-	fmt.printf("As decribing in https://bitsquid.blogspot.com/2011/06/strings-redux.html\n")
+	fmt.printf("As describing in https://bitsquid.blogspot.com/2011/06/strings-redux.html\n")
 	fmt.printf(
 		"Bitsquid avoid string and string class because the native supports of string in C++ are bad.\n",
 	)
 	fmt.printf(
 		"But Odin solve this problem completely, cheat string as builtin data type, can transmute to slice.\n",
 	)
-	fmt.printf("Strings are utf-8 by defaults, underlying are a slice of u8 or byte.\n")
+	fmt.printf("Odin's strings are utf-8 by defaults, underlying are a slice of `u8`` or `byte``.\n")
 	fmt.printf(
 		"But char data type in Odin named `rune`, 4 bytes in size. Character literals are untyped constants, can implicit cast to any integer types that fit.\n",
 	)
-	fmt.printf("Batteries included with core:strings for working with strings better.\n")
+	fmt.printf("Batteries included with `core:strings` for working with strings better.\n")
 
 	fmt.println()
 	fmt.printf("In conlusions, string in Odin are simple, we dont need to deep dive here.\n")

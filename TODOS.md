@@ -1,6 +1,7 @@
 # Todos
 
 ## Important
+- Entry program that execute each topics' program
 - Good comments in code, instruction comments for reader
 - TUI to exploring topics in oneshot
 - Show code samples
@@ -17,6 +18,7 @@
 
 ## Memory
 - Allocator: https://bitsquid.blogspot.com/2010/09/custom-memory-allocation-in-c.html
+- Explain one other purpose of context system: to custom behaviours for existing library
 
 
 ## More Topics

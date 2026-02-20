@@ -34,7 +34,8 @@ Let's exploring it by yourself.
 
 
 ## Odin features that embrace Bitsquid Foundation's Library Design
-- Simplicity and minimalistic 
+- Simplicity and minimalistic
+- Doing more with less (features)
 - Struct can only have public members
 - Struct have no methods
 - No namespace, but package work like open namespace approachs
