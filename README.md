@@ -1,6 +1,7 @@
 # Odin Bitsquid Foundation
 If Bitsquid was written in Odin. 
 Source code of Bitsquid Foundation: https://github.com/niklas-ourmachinery/bitsquid-foundation
+> **NOTE:** moved to https://github.com/maihd/fun-with-odin
 
 ## Design of this repo
 I'm exploring the idea of interactive blog. It's mean I will provide the code with well written printing messages.
@@ -57,6 +58,6 @@ Let's exploring it by yourself.
 
 
 ## Resources
-- [Bitsquid Foundation library]: https://github.com/niklas-ourmachinery/bitsquid-foundation
-- [In-depth Bitsquid Foundation]: https://www.gamedeveloper.com/programming/in-depth-bitsquid-foundation-library
-- [Simplified JSON (sjson)]: https://bitsquid.blogspot.com/2009/10/simplified-json-notation.html
+- [Bitsquid Foundation library](https://github.com/niklas-ourmachinery/bitsquid-foundation)
+- [In-depth Bitsquid Foundation](https://www.gamedeveloper.com/programming/in-depth-bitsquid-foundation-library)
+- [Simplified JSON (sjson)](https://bitsquid.blogspot.com/2009/10/simplified-json-notation.html)
